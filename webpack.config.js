@@ -8,10 +8,10 @@ module.exports = {
     path:path.join(__dirname, '/dist'),
     filename:'[name].[contenthash].js'
   },
-  // devServer:{
-  //   port:3333,
-  //   hot:true
-  // },
+  devServer:{
+    port:3333,
+    hot:true
+  },
   watch:true,
   module:{
     rules:[
