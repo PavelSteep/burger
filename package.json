@@ -1,9 +1,13 @@
 {
-  "name": "burger-prod-my",
+  “homepage”:“http://PavelSteep.github.io/burger”, 
+  "name": "burger",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
     "clear": "rd /s /q dist"
@@ -29,6 +33,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.8.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.0",
     "html-webpack-plugin": "^5.5.4",
     "mini-css-extract-plugin": "^2.7.6",
     "style-loader": "^3.3.3",
