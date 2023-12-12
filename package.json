@@ -6,12 +6,12 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
+    "build": "webpack --mode production",
     "predeploy": "npm run build && gh-pages -d build",
     "deploy": "npm run predeploy",
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
-    "clear": "rd /s /q dist",
-    "build": "webpack --mode production"
+    "clear": "rd /s /q dist"
   },
   "keywords": [],
   "author": "",
