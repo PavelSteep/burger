@@ -1,0 +1,148 @@
+/* Navbar */
+nav .navbar-brand img{
+  width:auto;
+  max-height:80px;
+}
+
+nav.navbar{
+  position:absolute;
+  width:100%;
+  background:transparent !important;
+  z-index:1111;
+}
+
+nav.navbar.sticky{
+  position:fixed;
+  left:0;
+  top:0;
+  background-color:var(--light-white);
+}
+
+nav .nav-link{
+  display:inline-flex;
+  align-items:center;
+  color:var(--white);
+  padding:0 18px;
+  font-size:1.125rem;
+  font-weight:500;
+  font-family:var(--oswald);
+}
+
+nav .nav-link:hover{
+  color:var(--yellow);
+}
+
+nav .cart{
+  position:relative;
+  top:-5px;
+}
+
+nav .goods{
+  position:absolute;
+  left:10px;
+  top:-6px;
+  color:var(--white);
+  background:var(--light-red);
+  font-size:11px;
+  text-align:center;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  line-height:15px;
+}
+
+nav .navbar-collapse{
+  animation:sticky .25s;
+}
+
+@keyframes sticky{
+  0%{
+    opacity:0;
+    transform:translateY(-100%);
+  }
+
+  100%{
+    opacity:1;
+    transform:none;
+  }
+}
+
+/* Hero Section */
+.hero_section{
+  background:url(../assets/hero/hero-1.jpg) center no-repeat;
+  background-size:cover;
+  min-height:100vh;
+  padding:164px 0 90px;
+}
+
+.burger-block{
+  position:relative;
+}
+
+.burger-block img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+}
+
+.hero_section .price_badge{
+  background:url(../assets/hero/badge.png) center no-repeat;
+  background-size:cover;
+  position:absolute;
+  top:25px;
+  right:80px;
+  width:180px;
+  height:176px;
+}
+
+.hero_section .badge_text{
+  width:100%;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  text-align:center;
+}
+
+.badge_text .p_xs{
+  color:var(--black);
+  font-weight:600;
+}
+
+.badge_text h4.p_xs{
+  font-size:30px;
+}
+
+.badge_text h3.p_xs{
+  font-size:46px;
+}
+
+.hero_section .hero_text{
+  padding-top:50px;
+}
+
+.hero_text h1{
+  font-family:var(--lilita);
+  font-size:110px;
+  line-height:1;
+  margin-bottom:15px;
+}
+
+.hero_text h2{
+  font-family:var(--lilita);
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.hero_text p{
+  font-family:var(--roboto);
+  font-size:1rem;
+  padding:0 15%;
+  margin-bottom:16px;
+}
+
+/* Menu for MEDIA */
+@media (max-width:992px){
+  nav.navbar, nav .navbar-nav{
+    background:var(--light-white) !important;
+  }
+}

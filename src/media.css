@@ -1,0 +1,129 @@
+@media (max-width:992px){
+  .navbar-nav{
+    align-items:center;
+  }
+
+  .navbar-toggler{
+    border:none !important;
+  }
+
+  .navbar-toggler:focus{
+    outline:none !important;
+    box-shadow:none !important;
+  }
+
+  .nav-link{
+    color:var(----light-white);
+    padding:1rem !important;
+  }
+
+  nav.navbar, nav .navbar-nav{
+    background:var(--light-white) !important;
+  }
+
+  nav .nav-link{
+    color:var(--light-black) !important;
+  }
+}
+
+
+@media (max-width:479px){
+  .hero_text h1{
+    font-size:60px!important;
+  }
+}
+
+/* About */
+@media (max-width:992px){
+  .about_section h2{
+    font-size:40px;
+    font-weight:400;
+  }
+
+  .about_wrapper p{
+    padding:0;
+  }
+}
+
+/* Section 3 */
+@media (min-width:320px){
+  .menu_section .ads_box{
+    padding-top:25px !important;
+  }
+}
+
+@media (min-width:575px){
+  .menu_section .ads_box{
+    padding-top:75px !important;
+  }
+}
+
+/* Section 4 */
+@media (max-width:991px){
+  .promotion_section .prom-text{
+    padding:36px 10px 0 0;
+  }
+}
+
+@media (max-width:480px){
+  .bg_parallax{
+    background-attachment:scroll!important;
+  }
+  .prom-text h2{
+    font-size:40px;
+    padding-right:0!important;
+  }
+}
+
+
+/* Section 5 */
+@media (max-width:991px){
+  .shop_section{
+    text-align:center;
+  }
+
+  .shop_section p{
+    padding-right:0 !important;
+  }
+
+  .shop_section .shop-elems{
+    justify-content:center;
+  }
+}
+
+@media (max-width:480px){
+  .shop_section h4{
+    font-size:28px;
+  }
+
+  .shop_section h2{
+    font-size:60px !important;
+    font-weight:600;
+  }
+
+  .shop_section p{
+    font-size:18px;
+    line-height:1.5;
+    text-align:center;
+    margin-bottom:40px !important;
+  }
+
+  .brand_section .brand_img img{
+    width:72px !important;
+  }
+}
+
+/* BLOG */
+@media (max-width:480px){
+  .blog_section .carousel-caption p{
+    font-size:16px !important;
+  }
+}
+
+/* SECTION */
+@media (max-width:480px){
+  .contact_section h2{
+    font-size:60px !important;
+    font-weight:400 !important;
+  }
+}
