@@ -7,7 +7,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run dist",
-    "deploy": "gh-pages -d distё",
+    "deploy": "gh-pages -d dist",
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
     "clear": "rd /s /q dist",
