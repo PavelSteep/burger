@@ -7,11 +7,11 @@
   "scripts": {
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
-    "clear": "rd /s /q dist",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist",
+    "clear": "rd /s /q dist"
   },
   "keywords": [],
   "author": "",
