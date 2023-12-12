@@ -10,7 +10,8 @@
     "deploy": "gh-pages -d build",
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
-    "clear": "rd /s /q dist"
+    "clear": "rd /s /q dist",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
