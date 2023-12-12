@@ -8,6 +8,7 @@
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
     "predeploy": "npm run dist",
+    "dist": "webpack --mode production",
     "deploy": "gh-pages -d dist",
     "clear": "rd /s /q dist"
   },
