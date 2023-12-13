@@ -1,0 +1,9 @@
+/* "start": "webpack-dev-server --mode production --hot --open",
+"build": "webpack --mode production",
+"dev": "webpack --mode development",
+"prod": "webpack --mode production",
+"predeploy": "npm run dist",
+"dist": "webpack --mode production",
+"deploy": "gh-pages -d dist",
+"clear": "rmdir rd /s /q dist"
+ "deploy": "gh-pages -d dist", */

@@ -4,10 +4,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  entry:"./src/index.js",
   output: {
-    path:path.join(__dirname, '/dist'),
-    filename:'[name].[contenthash].js'
+    path:path.join(__dirname, '/build'),
+    filename:'[name].[contenthash].js',
+    clean: true
   },
+  devtool:"source-map",
   devServer:{
     port:3333,
     hot:true

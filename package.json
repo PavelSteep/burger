@@ -5,12 +5,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
-    "predeploy": "npm run dist",
+    "predeploy": "npm run build",
     "dist": "webpack --mode production",
-    "deploy": "gh-pages -d dist",
-    "clear": "rd /s /q dist"
+    "deploy": "gh-pages -d build",
+    "clear": "rmdir rd /s /q build"
   },
   "keywords": [],
   "author": "",
