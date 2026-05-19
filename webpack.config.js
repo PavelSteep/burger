@@ -47,6 +47,11 @@ module.exports = {
       {
         test: /\.(woff(2)?|eot|ttf|otf|svg)$/,
         type: 'asset/inline',
+      },
+      {
+        // 👇 добавил правило для видео/аудио
+        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)$/i,
+        type: 'asset/resource',
       }
     ]
   },

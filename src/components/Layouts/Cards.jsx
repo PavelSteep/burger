@@ -13,17 +13,17 @@ function Cards({image, title, paragraph, rating, price, renderRatingIcons}){
           <div className="body__card">
             <div className="item__rating">{renderRatingIcons(rating)}</div>
             <div className="whishlist">
-              <i className="bi bi-heart"></i>
+              <i className="bi bi-brush"> View Project</i>
             </div>
           </div>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{paragraph}</Card.Text>
         <div className="menu__price">
-          <h5>${price}</h5>
+          <h5>{price}</h5>
           <div className="add_to_cart">
             <Link to="/">
-              <i className="bi bi-bag"></i>
-                Add To Cart
+              <i className="bi bi-gem"></i>
+                View Artwork
             </Link>
           </div>
         </div>

@@ -1,7 +1,7 @@
 /* Navbar */
 nav .navbar-brand img{
   width:auto;
-  max-height:80px;
+  max-height:90px;
 }
 
 nav.navbar{
@@ -69,7 +69,7 @@ nav .navbar-collapse{
 
 /* Hero Section */
 .hero_section{
-  background:url(../assets/hero/hero-1.jpg) center no-repeat;
+  background:url(../assets/hero/hero-1.png) center no-repeat;
   background-size:cover;
   min-height:100vh;
   padding:164px 0 90px;

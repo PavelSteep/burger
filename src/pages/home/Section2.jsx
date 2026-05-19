@@ -11,18 +11,18 @@ import Delivery from '../../assets/about/delivery-bike.png';
 const aboutData = [
   {
     image:Pizza,
-    title:'Original',
-    text:'Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus'
+    title:'Character Design',
+    text:'Creating unique characters with detailed anatomy, textures, and expressive features that bring stories to life.'
   },
   {
     image:Salad,
-    title:'Original',
-    text:'Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus'
+    title:'Environment Modeling',
+    text:'Building immersive scenes and environments — from architecture to landscapes — with a focus on lighting and composition.'
   },
   {
     image:Delivery,
-    title:'Original',
-    text:'Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus'
+    title:'Props & Assets',
+    text:'Designing props and assets for games and animation: weapons, furniture, vehicles, and other elements that add realism.'
   },
 ];
 
@@ -33,15 +33,15 @@ function Section2(){
         <Container>
           <Row>
             <Col lg={{span:8, offset:2}} className="text-center">
-              <h2>The burger tastes better when you eat it with your family</h2>
+              <h2>Bring imagination to life in 3D</h2>
               <p>
-                Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor
-                an tempus feugiat dolor lacinia cubilia curae integer orci congue and 
-                metus integer primis in integer metus              
+                Explore my collection of detailed 3D models and scenes — from characters 
+                to environments. Each render is crafted with attention to texture, lighting, 
+                and storytelling, designed to showcase creativity and technical skill.            
               </p>
-              <Link to="/" className="order_btn btn_red">
-                Explore full menu
-              </Link>
+             <a href="https://bpv535.artstation.com/" target="_blank" rel="noopener noreferrer" className="order_btn btn_red">
+                <i className="bi bi-box"></i> Explore 3D Models
+             </a>
             </Col>
           </Row>
         </Container>

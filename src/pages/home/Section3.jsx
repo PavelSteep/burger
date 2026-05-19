@@ -1,14 +1,14 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import Image1 from '../../assets/menu/burger-1.jpg';
-import Image2 from '../../assets/menu/burger-2.jpg';
-import Image3 from '../../assets/menu/burger-3.jpg';
-import Image4 from '../../assets/menu/burger-4.jpg';
-import Image5 from '../../assets/menu/burger-5.jpg';
-import Image6 from '../../assets/menu/burger-6.jpg';
-import Image7 from '../../assets/menu/burger-7.jpg';
-import Image8 from '../../assets/menu/burger-8.jpg';
+import Image1 from '../../assets/menu/burger-1.png';
+import Image2 from '../../assets/menu/burger-2.png';
+import Image3 from '../../assets/menu/burger-3.png';
+import Image4 from '../../assets/menu/burger-4.png';
+import Image5 from '../../assets/menu/burger-5.png';
+import Image6 from '../../assets/menu/burger-6.png';
+import Image7 from '../../assets/menu/burger-7.png';
+import Image8 from '../../assets/menu/burger-8.png';
 import Cards from '../../components/Layouts/Cards';
 
 
@@ -16,66 +16,66 @@ const burgerData = [
   {
     id:'0001',
     image:Image1,
-    title:'Crispy Chicken',
-    paragraph:'Chicken breast, chilli sauce, tomatoes, pickles, coleslaw',
+    title:'Character 3D model',
+    paragraph:'European brown Cossack armed with a saber',
     rating:5,
-    price:99.15
+    price:2026
   },
   {
     id:'0002',
     image:Image2,
-    title:'Ultimate Bacon',
-    paragraph:'House patty, cheddar cheese, bacon, onion, mustard',
-    rating:4.5,
-    price:99.32
+    title:'Low poly 3D model mesh',
+    paragraph:'European brown Cossack armed with a saber',
+    rating:5,
+    price:2026
   },
   {
     id:'0003',
     image:Image3,
-    title:'Black Sheep',
-    paragraph:'American cheese, tomato relish, avocado, lettuce, red onion',
-    rating:4.5,
-    price:69.15
+    title:'Character 3D model',
+    paragraph:'European green Cossack armed with a rifle',
+    rating:5,
+    price:2026
   },
   {
     id:'0004',
     image:Image4,
-    title:'Double Burger',
-    paragraph:'2 patties, cheddar cheese, mustard, pickles, tomatoes',
-    rating:4.5,
-    price:99.25
+    title:'Low poly 3D model mesh',
+    paragraph:'European green Cossack armed with a rifle',
+    rating:5,
+    price:2026
   },
   {
     id:'0005',
     image:Image5,
-    title:'Double Burger',
-    paragraph:'2 patties, cheddar cheese, mustard, pickles, tomatoes',
-    rating:3,
-    price:99.15
+    title:'Sabre Low poly 3D model',
+    paragraph:'Saber of the European Cossack',
+    rating:5,
+    price:2026
   },
   {
     id:'0006',
     image:Image6,
-    title:'Turkey Burger',
-    paragraph:'Turkey, cheddar cheese, onion, lettuce, tomatoes, pickles',
-    rating:3,
-    price:79.18
+    title:'Low poly 3D model mesh',
+    paragraph:'Saber of the European Cossack',
+    rating:5,
+    price:2026
   },
   {
     id:'0007',
     image:Image7,
-    title:'Smokey House',
-    paragraph:'Patty, cheddar cheese, onion, lettuce, tomatoes, pickles',
-    rating:2.5,
-    price:69.15
+    title:'Musket Low poly 3D model',
+    paragraph:'Rifle of the European Cossack',
+    rating:5,
+    price:2026
   },
   {
     id:'0008',
     image:Image8,
-    title:'Crispy Chicken',
-    paragraph:'Chicken breast, chilli sauce, tomatoes, pickles, coleslaw',
-    rating:2,
-    price:89.12
+    title:'Low poly 3D model mesh',
+    paragraph:'Rifle of the European Cossack',
+    rating:5,
+    price:2026
   },
 ];
 
@@ -104,11 +104,12 @@ function Section3(){
       <Container>
         <Row>
           <Col lg={{span:8, offset:2}}>
-            <h2>Our crazy burgers</h2>
+            <h2>My 3D Portfolio Showcase</h2>
             <p className="menu_desc">
-              Aliquam a augue suscipit, luctus neque purus ipsum neque 
-              <br />
-              undo dolor primis libero tempus,  blandit a cursus varius magna              
+               Explore characters, environments, and props created in Blender. 
+              <br /> 
+               Each model is crafted with attention to detail, textures, and lighting,  
+               bringing imagination to life in 3D.              
             </p>
           </Col>
         </Row>
@@ -130,19 +131,19 @@ function Section3(){
         <Row>
           <Col lg={5}>
             <div className="ads_box ads_img1">
-              <h4>Get Your free</h4>
-              <h5>Cheese fries</h5>
+              <h4>Discover</h4>
+              <h5>Character Models</h5>
               <Link className="btn_red">
-                Learn More
+                View Gallery
               </Link>
             </div>
           </Col>
           <Col lg={7}>
             <div className="ads_box ads_img2">
-              <h4>Get Your free</h4>
-              <h5>Cheese fries</h5>
+              <h4>Explore</h4>
+              <h5>Environment Scenes</h5>
               <Link className="btn_red">
-                Learn More
+                See Details
               </Link>
             </div>
           </Col>

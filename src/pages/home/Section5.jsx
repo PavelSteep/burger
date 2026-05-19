@@ -20,10 +20,12 @@ function Section5(){
         <Container>
           <Row>
             <Col lg={6} className="mb-5">
-              <h4>Download mobile App and</h4>
-              <h2>save up to 20%</h2>
+              <h4>Explore my portfolio</h4>
+              <h2>3D Models & Environments</h2>
               <p>
-                Aliquam a augue suscipit, luctus neque purus ipsum and neque dolor primis libero tempus, blandit varius              
+                Discover characters, props, and scenes created in Blender.  
+                Each project showcases textures, lighting, and storytelling,  
+                designed for games and animation.
               </p>
               <div className="shop-elems d-flex">
                 <Link to="/">

@@ -13,12 +13,32 @@ function Section6(){
         <Row>
           <Carousel>
             <Carousel.Item>
-              <Carousel.Caption>
+              <Carousel.Caption className="d-flex flex-column align-items-center">
                 <div className="user_img">
                   <img src={User1} alt="user-1" className="img-fluid" />
                 </div>
                 <p>
-                  "Etiam sapien sem at sagittis congue augue massa varius sodales sapien undo tempus dolor egestas magna suscipit magna tempus aliquet porta sodales augue suscipit luctus neque"                  
+                   Pavle creates detailed 3D models with realistic textures and lighting 
+                   <br />
+                </p>
+
+                <div className="item_rating">
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-half"></i>
+                  <i className="bi bi-star"></i>
+                </div>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Carousel.Caption className="d-flex flex-column align-items-center">
+                <div className="user_img">
+                  <img src={User2} alt="user-2" className="img-fluid" />
+                </div>
+                <p>
+                 Great character design with clean topology and expressive textures.
+                 <br/>
                 </p>
                 <div className="item_rating">
                   <i className="bi bi-star-fill"></i>
@@ -30,29 +50,12 @@ function Section6(){
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <Carousel.Caption>
-                <div className="user_img">
-                  <img src={User2} alt="user-2" className="img-fluid" />
-                </div>
-                <p>
-                  "Etiam sapien sem at sagittis congue augue massa varius sodales sapien undo tempus dolor egestas magna suscipit magna tempus aliquet porta sodales augue suscipit luctus neque"                  
-                </p>
-                <div className="item_rating">
-                  <i className="bi bi-star-fill"></i>
-                  <i className="bi bi-star-fill"></i>
-                  <i className="bi bi-star-fill"></i>
-                  <i className="bi bi-star-half"></i>
-                  <i className="bi bi-star"></i>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-                        <Carousel.Item>
-              <Carousel.Caption>
+              <Carousel.Caption className="d-flex flex-column align-items-center">
                 <div className="user_img">
                   <img src={User3} alt="user-3" className="img-fluid" />
                 </div>
                 <p>
-                  "Etiam sapien sem at sagittis congue augue massa varius sodales sapien undo tempus dolor egestas magna suscipit magna tempus aliquet porta sodales augue suscipit luctus neque"                  
+                  The props and assets are game ready and optimized. <br/>
                 </p>
                 <div className="item_rating">
                   <i className="bi bi-star-fill"></i>
@@ -63,13 +66,14 @@ function Section6(){
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
-                        <Carousel.Item>
-              <Carousel.Caption>
+            <Carousel.Item>
+              <Carousel.Caption className="d-flex flex-column align-items-center">
                 <div className="user_img">
                   <img src={User4} alt="user-4" className="img-fluid" />
                 </div>
                 <p>
-                  "Etiam sapien sem at sagittis congue augue massa varius sodales sapien undo tempus dolor egestas magna suscipit magna tempus aliquet porta sodales augue suscipit luctus neque"                  
+                 Lighting and rendering are impressive — every scene feels cinematic.
+                 <br/>
                 </p>
                 <div className="item_rating">
                   <i className="bi bi-star-fill"></i>

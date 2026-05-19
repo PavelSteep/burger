@@ -1,26 +1,25 @@
-import React, {useState, useEffect} from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-function Footer(){
-  // Scroll top
+function Footer() {
   const [isVisible, setIsVisible] = useState(false);
-  const scrollTop = ()=>{
-    window.scrollTo({
-      top:0,
-      behavior:'smooth'
-    });
-  }
 
-  const listenScroll = ()=>{
-    let heightHidden = 250;
-    const windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    windowScroll > heightHidden ? setIsVisible(true) : setIsVisible(false);
-  }
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
-  useEffect(()=>{
+  const listenScroll = () => {
+    const heightHidden = 250;
+    const windowScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    setIsVisible(windowScroll > heightHidden);
+  };
+
+  useEffect(() => {
     window.addEventListener('scroll', listenScroll);
-  });
+    return () => window.removeEventListener('scroll', listenScroll);
+  }, []);
 
   return (
     <>
@@ -30,57 +29,57 @@ function Footer(){
             <Col lg={3}>
               <div className="text-center">
                 <h5>Location</h5>
-                <p>5505 Waterford District</p>
-                <p>Dr, Miami, FL 33126</p>
-                <p>United States</p>
+                <p>3D Artist Portfolio</p>
+                <p>Hard Surface & Environment</p>
+                <p>Based in Ukraine</p>
               </div>
             </Col>
             <Col lg={3}>
               <div className="text-center">
-                <h5>Working hours</h5>
-                <p>Mon-Fri: 9:00AM - 10:00PM</p>
-                <p>Saturday: 10:00AM - 8:30PM</p>
-                <p>Sunday: 12:00PM - 5:00PM</p>
+                <h5>Services</h5>
+                <p>3D Modeling</p>
+                <p>Texturing & Rendering</p>
+                <p>Game Assets & Environment</p>
               </div>
             </Col>
             <Col lg={3}>
               <div className="text-center">
-                <h5>Order now</h5>
-                <p>Quaerat neque purus ipsum</p>
+                <h5>Contact me</h5>
+                <p>My number phone</p>
                 <p>
-                  <Link to="tel:9998887777" className="calling">
-                    999-888-7777
-                  </Link>
+                  <a href="tel:+380664637942" className="calling">
+                    066-463-7942
+                  </a>
                 </p>
-              </div>            
+              </div>
             </Col>
             <Col lg={3}>
               <div className="text-center">
-                <h5>Follow us</h5>
-                <p>Quaerat neque purus ipsum</p>
+                <h5>Follow me</h5>
+                <p>My telegram</p>
                 <ul className="socials">
                   <li>
-                    <Link to="/">
-                      <i class="bi bi-facebook"></i>
-                    </Link>
+                    <a href="https://t.me/pavlobiriukov21" target="_blank" rel="noopener noreferrer">
+                      <i className="bi bi-telegram"></i>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/">
-                      <i class="bi bi-twitter"></i>
-                    </Link>
+                    <a href="https://wa.me/380664637942" target="_blank" rel="noopener noreferrer">
+                      <i className="bi bi-whatsapp"></i>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/">
-                      <i class="bi bi-instagram"></i>
-                    </Link>
+                    <a href="https://www.instagram.com/pavel39223/" target="_blank" rel="noopener noreferrer">
+                      <i className="bi bi-instagram"></i>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/">
-                      <i class="bi bi-youtube"></i>
-                    </Link>
+                    <a href="https://bpv535.artstation.com/" target="_blank" rel="noopener noreferrer">
+                      <i className="bi bi-globe"></i>
+                    </a>
                   </li>
                 </ul>
-              </div>            
+              </div>
             </Col>
           </Row>
           <Row className="copy_right">
@@ -89,39 +88,24 @@ function Footer(){
                 <ul>
                   <li>
                     <span>
-                      © 2023 <i>TASTYBURGER</i>  All rights reserved
+                      © 2026 <i>Biriukov Pavlo</i> 3D Artist Portfolio
                     </span>
                   </li>
-                  <li>
-                    <Link to="/">
-                      About us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      Terms of use
-                    </Link>                  
-                  </li>
-                  <li>
-                    <Link to="/">
-                      Privacy Policy
-                    </Link>                  
-                  </li>
+                  <li><Link to="/about">About us</Link></li>
+                  <li><Link to="/terms">Terms of use</Link></li>
+                  <li><Link to="/privacy">Privacy Policy</Link></li>
                 </ul>
               </div>
             </Col>
           </Row>
         </Container>
-      </footer>   
-      {
-        isVisible && (
-          <div className="scroll_top" onClick={scrollTop}>
-            <i className="bi bi-arrow-up"></i>
-          </div> 
-        )
-      }
+      </footer>
+      {isVisible && (
+        <div className="scroll_top" onClick={scrollTop}>
+          <i className="bi bi-arrow-up"></i>
+        </div>
+      )}
     </>
-
   );
 }
 

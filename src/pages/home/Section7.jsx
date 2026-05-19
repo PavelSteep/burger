@@ -8,11 +8,16 @@ function Section7(){
       <Container>
         <Row className="justify-content-center">
           <Col className="text-center">
-            <h4>We Guarantee</h4>
-            <h2>30 Minutes Delivery!</h2>
-            <Link to="/" className="btn_red">
-              Call: 999-888-7777
-            </Link>
+            <h4>Check My Portfolio</h4>
+            <h2>See My Latest 3D Works!</h2>
+             <a 
+               href="https://www.artstation.com/pavel39223" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               className="btn_red"
+              >
+                  Visit ArtStation
+              </a>
           </Col>
         </Row>
       </Container>
