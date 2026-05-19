@@ -35,7 +35,7 @@ function Section2(){
             <Col lg={{span:8, offset:2}} className="text-center">
               <h2>Bring imagination to life in 3D</h2>
               <p>
-                Explore my collection of detailed 3D models and scenes from characters 
+                Explore my collection of detailed 3D models and scenes — from characters 
                 to environments. Each render is crafted with attention to texture, lighting, 
                 and storytelling, designed to showcase creativity and technical skill.            
               </p>

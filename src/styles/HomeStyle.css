@@ -1,7 +1,7 @@
 /* About */
 .about_section{
-  padding-top:88px;
-  padding-bottom:320px;
+  padding-top:87px;
+  padding-bottom:318px;
   background:url(../assets/about/about-1.png) center no-repeat;
   background-size:cover;
   width:100%;
@@ -16,7 +16,7 @@
   color:var(--p-text);
   font-family:var(--roboto);
   font-size:18px;
-  margin:22px 0 44px;
+  margin:22px 0 43px;
 }
 
 /* .about_section btn_red{
